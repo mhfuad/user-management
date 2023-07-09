@@ -1,0 +1,17 @@
+<h1>all-users</h1>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of tableData; let i = index">
+      <th scope="row">{{i+1}}</th>
+      <td>{{ item.name }}</td>
+    </tr>
+  </tbody>
+</table>
